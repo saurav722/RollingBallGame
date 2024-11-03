@@ -2,32 +2,28 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform ball;          // Reference to the ball (the sphere)
-    public float distance = 10f;    // Distance from the ball
-    public float mouseSensitivity = 100f;  // Sensitivity for mouse movement
-    public float minYAngle = -20f;  // Minimum angle the camera can look up
-    public float maxYAngle = 80f;   // Maximum angle the camera can look down
-    private float currentX = 0f;    // Current horizontal rotation
-    private float currentY = 0f;    // Current vertical rotation
+    public Transform target;
+    public Vector3 offset;
+    public float sensitivity = 100f;
 
-    void Update()
+    private float rotationX = 0f;
+    private float rotationY = 0f;
+
+    void Start()
     {
-        // Get mouse input
-        currentX += Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        currentY -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        // Clamp the vertical rotation so that the camera doesn't rotate too far up or down
-        currentY = Mathf.Clamp(currentY, minYAngle, maxYAngle);
+        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor to the center of the screen
     }
 
     void LateUpdate()
     {
-        // Calculate the new camera position based on the player's input
-        Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-        Vector3 direction = new Vector3(0, 0, -distance);
-        transform.position = ball.position + rotation * direction;
+        // Get mouse input
+        rotationX += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        rotationY -= Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
+        rotationY = Mathf.Clamp(rotationY, -35, 60); // Limit vertical rotation
 
-        // Make the camera look at the ball
-        transform.LookAt(ball.position);
+        // Rotate camera based on mouse movement
+        Quaternion rotation = Quaternion.Euler(rotationY, rotationX, 0);
+        transform.position = target.position + rotation * offset;
+        transform.LookAt(target);
     }
 }
