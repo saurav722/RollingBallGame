@@ -54,7 +54,7 @@ public class BallMovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the ball hits a wall
-        if (collision.gameObject.name.Contains("Wall"))
+        if (collision.gameObject.name.Contains("Obs"))
         {
             Respawn();  // Respawn the ball
         }
