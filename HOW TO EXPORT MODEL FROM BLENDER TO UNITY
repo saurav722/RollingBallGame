@@ -1,0 +1,12 @@
+HOW TO EXPORT MODEL FROM BLENDER TO UNITY
+
+•	Firstly select the model/object you want to export.
+•	Then go to file – export – select “.fbx”
+•	A new window will get opened.
+•	Now find the folder where you will export model/object.
+•	There go to path mode and select copy. Also select the copy button placed right to the copy field.
+•	Give name to your model/object from “untitled.fbx” to Any name.For example – “SM_platform1” , “SM_Ball”.
+•	Then press export fbx button.
+•	Go to folder where you export model/object.
+•	Open unity and under assets folder create new folder with name Models.
+•	Open this folder and drag all models into unity.
