@@ -1,0 +1,79 @@
+Basic shortcut keys for Blender
+
+Viewport Navigation:
+1.	Middle Mouse Button (MMB) - Rotate the view.
+2.	Shift + MMB - Pan the view.
+3.	Scroll Wheel - Zoom in and out.
+
+
+Focus and Centering:
+1.	Numpad . (Period) - Focus on the selected object.
+2.	Home - Frame all objects in the view.
+
+
+Object Mode Shortcuts:
+1.	G - Move (Grab)
+2.	S - Scale
+3.	R - Rotate
+4.	Shift + D - Duplicate
+5.	Alt + D - Linked Duplicate
+6.	X or Delete - Delete
+7.	Ctrl + J - Join selected objects
+8.	Tab - Toggle between Object Mode and Edit Mode
+9.	Ctrl + A - Apply transformations (Location, Rotation, Scale)
+10.	H - Hide selected object
+11.	Alt + H - Unhide all hidden objects
+12.	Shift + A - Add a new object (e.g., mesh, light)
+13.	Ctrl + Z - Undo
+14.	Ctrl + Shift + Z – Redo
+
+
+
+Edit Mode Shortcuts:
+1.	G - Move (Grab)
+2.	S - Scale
+3.	R - Rotate
+4.	E - Extrude
+5.	I - Inset
+6.	Ctrl + R - Loop Cut
+7.	K - Knife Tool
+8.	Ctrl + B - Bevel edges
+9.	X or Delete - Delete selected vertices, edges, or faces
+10.	A - Select all / Deselect all
+11.	B - Box select
+12.	C - Circle select
+13.	Alt + M - Merge vertices
+14.	Shift + Tab - Toggle snapping
+15.	F - Fill (Create a face between selected vertices/edges)
+
+
+
+
+
+
+
+
+
+
+
+Basic shortcut keys for UNITY
+
+Scene Navigation:
+1.	F - Focus on the selected object.
+2.	Alt + Left Mouse Button (LMB) - Rotate the scene view.
+3.	Alt + Right Mouse Button (RMB) - Zoom in/out in the scene view.
+4.	Alt + Middle Mouse Button (MMB) - Pan the scene view.
+5.	Right Mouse Button + WASD - Flythrough navigation (like FPS controls).
+
+
+Object Manipulation:
+1.	W - Move tool.
+2.	E - Rotate tool.
+3.	R - Scale tool.
+4.	T - Rect tool (for UI).
+5.	Q - Toggle between scene view and object manipulation tools.
+6.	Ctrl + D - Duplicate selected object(s).
+7.	Delete - Delete selected object(s).
+8.	Ctrl + Z - Undo.
+9.	Ctrl + Shift + Z - Redo.
+
