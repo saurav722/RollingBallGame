@@ -1,13 +1,13 @@
 Steps to add movement to the ball and camera following the ball
  
 •	Firstly, add platforms in viewport with proper position and rotation by resetting their position—right-click on the transform under the inspector window and select reset.
-•	Then add a sphere in the viewport, reset the position, and place it over the platform.
-•	Now add the cube, reset its position, and place it in the starting. This cube will indicate from where the sphere will start and will get respawned after getting destroyed. In order to hide the mesh of the cube, go to inspector and uncheck the mesh renderer.
+•	Then add a sphere in the viewport, reset the position, and place it over the platform. Name it 'Ball'.
+•	Now add the cube, reset its position, and place it in the starting. Name it 'Spawnpoint'. This cube will indicate from where the sphere will start and will get respawned after getting destroyed. In order to hide the mesh of the cube, go to inspector and uncheck the mesh renderer.
 •	Also set the view of the camera properly towards the sphere by adjusting the view, and then select main camera, go to game object, and select align with view. Now the camera angle will be properly set.
 •	Now add colliders to all the game objects, e.g., platforms ,sphere ,etc.
 •	Also add rigid body to sphere.
 •	Now create scripts for both camera and sphere.
-•	Go to the assets folder and create a new folder ‘scripts’. Inside this folder, create two scripts.
+•	Go to the assets folder and create a new folder ‘Scripts’. Inside this folder, create two scripts.
 •	Firstly, by right-clicking inside the folder, go to Create, then select a C# script. Name it ‘BallMovement’.
 •	Similarly, create a new script and name it 'CameraFollow’.
 •	Now go to Chrome and put this link in the search bar.
