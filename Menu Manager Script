@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     // This function can be used to go back to the Main Menu from Levels Menu
     public void ShowMainMenu()
     {
- 
+        mainMenu.SetActive(true);   // show the Main Menu
+        levelsMenu.SetActive(false);  // hide the Levels Pane 
     }
 }
