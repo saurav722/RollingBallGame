@@ -11,7 +11,8 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor to the center of the screen
+        Cursor.lockState = CursorLockMode.Confined; // Confine the cursor to the game window
+        Cursor.visible = true; // Ensure the cursor remains visible
     }
 
     void LateUpdate()
