@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class BackgroundMusic : MonoBehaviour
+{
+    // This will ensure only one instance of background music exists across scenes
+    private static BackgroundMusic instance;
+
+    void Awake()
+    {
+        // If an instance already exists, destroy the new one to avoid duplicates
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        // If this is the first instance, set it to persist across scenes
+        instance = this;
+
+        // Make this object persist across scenes
+        DontDestroyOnLoad(gameObject);
+
+        // Optionally, you can start playing music in the Awake method if it's not playing yet
+        AudioSource audioSource = GetComponent<AudioSource>();
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+}
